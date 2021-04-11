@@ -15,7 +15,7 @@ Example of making a request to schedule another lambda
 curl --location --request POST 'https://bv8zd56pw1.execute-api.us-east-1.amazonaws.com/aws-scheduler-lambda' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "schedulerExpression": "cron()",
+    "schedulerExpression": "cron(5 17 11 4 ? 2021)",
     "targetFunctionName": "aws_scheduler_cleanup",
     "target": {
         "id": "aws_scheduler_cleanup",
